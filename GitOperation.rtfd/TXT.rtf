@@ -1,0 +1,128 @@
+{\rtf1\ansi\ansicpg936\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset134 STHeitiSC-Light;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 Steps: $ means command on terminal (mac)\
+1. Open a new repo on the website.\
+\
+2. $ git clone [URL] [LocalDirectory] //download that repo on your local machine\
+3. $ cd [LocalDirectory]\
+4. $ git branch [branch-name] //make a new branch\
+5. $ git checkout [branch-name] //switch your working branch to that branch, then code\
+\
+6. $ git status //see all your modification on this local branch\
+7. $ git add [FileName] // add those files that you want to upload to the server\
+8. $ git commit -m \'93Comments\'94 //\
+\
+
+\f1 9. $ git checkout master //switch to local mater branch\
+10 $ git merge [branch-name] //merge brach with master branch\
+11 $ git push //push your code to server repo\'a1\'af\
+\
+
+\f0 \
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+\cf0 {{\NeXTGraphic Pasted Graphic.tiff \width9620 \height9100
+}¬}\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \
+1. Git Clone (
+\f1 \'bf\'bd\'b1\'b4
+\f0 )\
+$ git clone <
+\f1 \'b0\'e6\'b1\'be\'bf\'e2\'b5\'c4\'cd\'f8\'d6\'b7
+\f0 > <
+\f1 \'b1\'be\'b5\'d8\'c4\'bf\'c2\'bc\'c3\'fb
+\f0 >\
+copy code in that url to your local machine\
+\
+2. Git Remote\
+?? what is git remote, other\'92s code??\
+check git remote:\
+$ git remote\
+$ git remote -v\
+\
+add remote\
+$ git remote add <
+\f1 \'d6\'f7\'bb\'fa\'c3\'fb
+\f0 > 
+\f1  <\'cd\'f8\'d6\'b7>\
+\
+remove\
+$ git remote rm 
+\f0 <
+\f1 \'d6\'f7\'bb\'fa\'c3\'fb
+\f0 > \
+\
+rename\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f1 \cf0 $ git remote rename
+\f0 <
+\f1 \'d6\'f7\'bb\'fa\'c3\'fb
+\f0 > \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \
+3. Git Fetch\
+// download updated code from server 
+\f1 to your local machine\
+*by default, git fetch will download all-branch updates
+\f0 \
+$ git fetch <
+\f1 \'d4\'b6\'b3\'cc\'d6\'f7\'bb\'fa\'c3\'fb
+\f0 >\
+//for certain(master) branch\
+$ git fetch <
+\f1 \'d4\'b6\'b3\'cc\'d6\'f7\'bb\'fa\'c3\'fb
+\f0 > master\
+?? what is branch\
+?? what is the relationship between remote & branch\
+\
+4. Git Pull\
+//download updates from remote branch, and merge this update with local branch\
+$ git pull <
+\f1 \'d4\'b6\'b3\'cc\'d6\'f7\'bb\'fa\'c3\'fb
+\f0 > <
+\f1 \'d4\'b6\'b3\'cc\'b7\'d6\'d6\'a7\'c3\'fb
+\f0 >:<
+\f1 \'b1\'be\'b5\'d8\'b7\'d6\'d6\'a7\'c3\'fb
+\f0 >\
+\
+if local branch tracks remote branch, we can use following command instead:\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 $ git pull <
+\f1 \'d4\'b6\'b3\'cc\'d6\'f7\'bb\'fa\'c3\'fb
+\f0 >\
+\
+5. Git Push\
+//upload local branch updates to remote updates\
+$ git push <
+\f1 \'d4\'b6\'b3\'cc\'d6\'f7\'bb\'fa\'c3\'fb
+\f0 > <
+\f1 \'b1\'be\'b5\'d8\'b7\'d6\'d6\'a7\'c3\'fb
+\f0 >:<
+\f1 \'d4\'b6\'b3\'cc\'b7\'d6\'d6\'a7\'c3\'fb
+\f0 >\
+\
+if local branch tracks remote branch, we can use following command instead:\
+$ git push <
+\f1 \'d4\'b6\'b3\'cc\'d6\'f7\'bb\'fa\'c3\'fb
+\f0 > <
+\f1 \'b1\'be\'b5\'d8\'b7\'d6\'d6\'a7\'c3\'fb
+\f0 >\
+\
+** Remove remote branch(
+\f1 \'cd\'c6\'cb\'cd\'c1\'cb\'b8\'f6\'bf\'d5\'b5\'c4
+\f0 )\
+$ git push origin :master \
+# 
+\f1 \'b5\'c8\'cd\'ac\'d3\'da
+\f0  \
+$ git push origin --delete master\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \
+}
