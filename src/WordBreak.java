@@ -28,7 +28,7 @@ public class WordBreak {
         //initiate first letter
         if(wordDict.contains(s.substring(0,1))) possible[0]=true;
         
-        //possible situation: 1. s.substring(0,i) is in dictionary 2. possible[j] is true and s.substring(j,i) is in dictionary
+        //possible situation: 1. s.substring(0,i+1) is in dictionary 2. possible[j] is true and s.substring(j+1,i+1) is in dictionary
         for(int i=1; i<s.length(); i++){
             for(int j=0; j<i; j++){
                 if(wordDict.contains(s.substring(0,i+1)) || (possible[j] && wordDict.contains(s.substring(j+1,i+1)) )){
